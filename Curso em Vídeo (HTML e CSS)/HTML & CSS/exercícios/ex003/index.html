@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Coisas rs</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        @font-face {
+            font-family: Samosa;
+            src: url('Hello Samosa.otf') format('opentype'), url('Hello Samosa.ttf') format('truetype')
+            ;
+            font-weight: normal;
+            font-size: normal;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: radial-gradient(circle, rgb(10, 95, 10) 10%, black 90%);
+            overflow: auto;
+        }
+        header, footer {
+            width: 90%;
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            text-align: center;
+            font-family: Orbitron;
+            position: fixed;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between; /* Distribui o espaço entre os itens */
+            align-items: center;
+            
+        }
+        header:hover {
+            top: 0;
+            
+        }
+        footer {
+            bottom: 0;
+        }
+        nav.left {
+            display: flex;
+            justify-content: flex-start; /* Alinha itens à esquerda */
+        }
+        nav.right {
+            display: flex;
+            justify-content: flex-end; /* Alinha itens à direita */
+        }
+       
+        nav a2 {
+            font-size: 1.5em;
+            margin: 0 15px;
+            color: aliceblue;
+            font-family: Samosa;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        nav a {
+            margin: 0 15px;
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #0a5f0a;
+            text-decoration: underline;
+            font-size: large;
+        }
+        h1, p, h2 {
+            color: aliceblue;
+            font-family: Orbitron;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        main {
+            margin-top: 5%; /* Espaço para o header */
+            margin-bottom: 10%; /* Espaço para o footer */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        section {
+            width: 100%;
+            min-height: 100vh; /* Ocupa a altura total da tela */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .content-section {
+            background: none;
+            padding: 20px;
+        }
+        .extra-section {
+            background-color: none;
+            padding: 0px 20px;
+        }
+        .extra-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .extra-section h2, .extra-section p {
+            color: aliceblue;
+            font-family: Orbitron;
+            margin: 30px 0;
+        }
+        .typing {
+            overflow: hidden; /* Garante que o texto será cortado na borda direita, criando o efeito de digitação */
+            white-space: nowrap; /* Mantém o texto em uma única linha */
+            border-right: 3px solid; /* Cria o efeito de um cursor piscando à direita do texto */
+            animation: typing 4s steps(16) infinite, blink 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 22ch } /* Ajuste a largura de acordo com o comprimento do texto */
+        }
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: aliceblue; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="left">
+            <a2 href="#perfil">Perfil</a2>
+        </nav>
+        <nav class="right">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section" id="home">
+            <h1>Perfil de um Programador</h1>
+            <p class="typing">Desenvolvedor Web <3</p><br>
+            <h2>Eita glória</h2>
+        </section>
+
+        <section class="extra-section" id="sobre">
+            <h2>Seção Extra</h2>
+            <img src="sua-imagem.jpg" alt="Descrição da Imagem">
+            <p>Texto descritivo sobre a imagem ou qualquer outro conteúdo que você deseja adicionar aqui.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Testando Coisas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

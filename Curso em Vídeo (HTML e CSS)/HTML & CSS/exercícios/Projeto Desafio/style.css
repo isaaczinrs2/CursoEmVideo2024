@@ -1,0 +1,296 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@font-face {
+    font-family: Idroid;
+    src: url('idroid.otf') format('opentype'), url('Hello Samosa.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #90eeb4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    height: 100%;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #42ff97, #006930);
+    width: 100%;
+    height: 230px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 5px rgba(0, 105, 48, 0.3); /* Adiciona sombra */
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+main img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+nav h1 {
+    margin: 30px;
+    font-family: Orbitron;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px rgba(66, 255, 151, 0.3); /* Adiciona sombra */
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: Orbitron;
+}
+
+.menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+  
+}
+
+
+.menu a:hover {
+    border-radius: 10px 10px 10px 10px;
+    background-color: #e6e6e68c;
+    color: #006930;
+}
+
+main {
+    margin: 0px 0px 10px 17%;
+    width: 70%;
+    background-color: white;
+    padding: 0;
+    border-radius: 0 0 1% 1%;
+    box-shadow: 3px 3px 5px rgba(19, 14, 14, 0.3); /* Adiciona sombra */
+}
+
+.hist {
+    font-family: Idroid;
+    padding: 20px 0 0 30px;
+    color: #006930;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px rgba(0, 105, 48, 0.3); /* Adiciona sombra */
+}
+
+main p {
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.2em;
+    text-indent: 2em;
+}
+
+h2 {
+    font-family: Idroid;
+    margin: 0px 0px 0px 30px; /* Ajuste para alinhar com o texto */
+    color: #006930;
+    background-image: linear-gradient(to right, rgba(11, 180, 81, 0.329), white);
+    text-shadow: 2px 2px 3px rgba(0, 105, 48, 0.3); /* Adiciona sombra */
+}
+
+p a {
+    color: #006930;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.icon {
+    width: 2%;  /* Ajuste o tamanho conforme necessário */
+    height: 1%;
+    vertical-align: middle;  /* Alinha o ícone ao meio da linha de texto */
+    margin-right: 5px;  /* Espaço entre o ícone e o texto */
+}
+
+aside > picture {
+    margin-left: 7%;
+}
+
+
+
+.final {
+    background-color: #9de6d0;
+    width: 95%;
+    height: auto;
+    border-radius: 2%;
+    margin: 0px 0px 10px 2%;
+    padding: 20px;
+    box-shadow: 3px 3px 5px rgba(157, 230, 208, 0.3); /* Adiciona sombra */
+}
+
+.final h3 {
+    border-radius: 5% 1% 0 0;
+    color: white;
+    background-color: #0da346;
+    padding: 10px;
+    text-shadow: 2px 2px 3px rgba(13, 163, 70, 0.3); /* Adiciona sombra */
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: underline;
+}
+
+.coluna {
+    width: 45%;
+}
+
+footer {
+    background-color:#006930;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 5px rgba(0, 105, 48, 0.3); /* Adiciona sombra */
+}
+
+@media (max-width: 1200px) {
+    main {
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .final {
+        width: 100%;
+        margin: 0;
+    }
+
+    .lista {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .coluna {
+       
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+
+    .menu {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu a {
+        margin: 0px 0;
+    }
+
+    main {
+        margin: 0 2%;
+        width: 96%;
+    }
+
+    .hist {
+        font-size: 1.5em;
+        padding: 10px 0 0 15px;
+    }
+
+    h2 {
+        margin: 0px 0px 0px 15px;
+        font-size: 1.5em;
+    }
+
+    main p {
+        padding: 10px;
+        font-size: 1em;
+        text-indent: 1em;
+    }
+
+    .final h3 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav h1 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .menu a {
+        margin: 5px 0;
+    }
+
+    main p {
+        font-size: 0.9em;
+        padding: 5px;
+        text-indent: 1em;
+    }
+
+    .hist {
+        font-size: 1.2em;
+        padding: 10px 0 0 10px;
+    }
+
+    h2 {
+        margin: 0px 0px 0px 10px;
+        font-size: 1.2em;
+    }
+
+    .final {
+        padding: 10px;
+    }
+
+    .final h3 {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+}
+
+.video-section  {
+    background-color:#006930;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgba(0, 105, 48, 0.3); /* Adiciona sombra */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

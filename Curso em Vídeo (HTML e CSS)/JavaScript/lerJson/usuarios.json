@@ -1,0 +1,340 @@
+[
+    {
+        "nome": "Alice Azevedo",
+        "idade": 25,
+        "email": "alice.azevedo@example.com",
+        "enderecos": [
+            {
+                "cep": "01010-000"
+            },
+            {
+                "cep": "01020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Bruno Barros",
+        "idade": 32,
+        "email": "bruno.barros@example.com",
+        "enderecos": [
+            {
+                "cep": "20010-000"
+            },
+            {
+                "cep": "20020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Carlos Castro",
+        "idade": 45,
+        "email": "carlos.castro@example.com",
+        "enderecos": [
+            {
+                "cep": "30010-000"
+            },
+            {
+                "cep": "30020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Daniela Duarte",
+        "idade": 29,
+        "email": "daniela.duarte@example.com",
+        "enderecos": [
+            {
+                "cep": "80010-000"
+            },
+            {
+                "cep": "80020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Eduardo Esteves",
+        "idade": 38,
+        "email": "eduardo.esteves@example.com",
+        "enderecos": [
+            {
+                "cep": "90010-000"
+            },
+            {
+                "cep": "90020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Fernanda Farias",
+        "idade": 24,
+        "email": "fernanda.farias@example.com",
+        "enderecos": [
+            {
+                "cep": "50010-000"
+            },
+            {
+                "cep": "50020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Gabriel Gomes",
+        "idade": 31,
+        "email": "gabriel.gomes@example.com",
+        "enderecos": [
+            {
+                "cep": "40010-000"
+            },
+            {
+                "cep": "40020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Helena Henrique",
+        "idade": 27,
+        "email": "helena.henrique@example.com",
+        "enderecos": [
+            {
+                "cep": "60010-000"
+            },
+            {
+                "cep": "60020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Igor Iglesias",
+        "idade": 34,
+        "email": "igor.iglesias@example.com",
+        "enderecos": [
+            {
+                "cep": "59010-000"
+            },
+            {
+                "cep": "59020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Júlia Jacinto",
+        "idade": 22,
+        "email": "julia.jacinto@example.com",
+        "enderecos": [
+            {
+                "cep": "58010-000"
+            },
+            {
+                "cep": "58020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Karen Kosta",
+        "idade": 26,
+        "email": "karen.kosta@example.com",
+        "enderecos": [
+            {
+                "cep": "66010-000"
+            },
+            {
+                "cep": "66020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Lucas Lima",
+        "idade": 37,
+        "email": "lucas.lima@example.com",
+        "enderecos": [
+            {
+                "cep": "69010-000"
+            },
+            {
+                "cep": "69020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Mariana Mendes",
+        "idade": 30,
+        "email": "mariana.mendes@example.com",
+        "enderecos": [
+            {
+                "cep": "88010-000"
+            },
+            {
+                "cep": "88020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Natalia Nunes",
+        "idade": 28,
+        "email": "natalia.nunes@example.com",
+        "enderecos": [
+            {
+                "cep": "29010-000"
+            },
+            {
+                "cep": "29020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Otávio Oliveira",
+        "idade": 35,
+        "email": "otavio.oliveira@example.com",
+        "enderecos": [
+            {
+                "cep": "60030-000"
+            },
+            {
+                "cep": "60040-000"
+            }
+        ]
+    },
+    {
+        "nome": "Paula Pereira",
+        "idade": 40,
+        "email": "paula.pereira@example.com",
+        "enderecos": [
+            {
+                "cep": "71010-000"
+            },
+            {
+                "cep": "71020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Quintino Queiroz",
+        "idade": 33,
+        "email": "quintino.queiroz@example.com",
+        "enderecos": [
+            {
+                "cep": "72010-000"
+            },
+            {
+                "cep": "72020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Rafael Rocha",
+        "idade": 29,
+        "email": "rafael.rocha@example.com",
+        "enderecos": [
+            {
+                "cep": "73010-000"
+            },
+            {
+                "cep": "73020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Sandra Silva",
+        "idade": 42,
+        "email": "sandra.silva@example.com",
+        "enderecos": [
+            {
+                "cep": "74010-000"
+            },
+            {
+                "cep": "74020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Tiago Teixeira",
+        "idade": 36,
+        "email": "tiago.teixeira@example.com",
+        "enderecos": [
+            {
+                "cep": "75010-000"
+            },
+            {
+                "cep": "75020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Ursula Uchoa",
+        "idade": 27,
+        "email": "ursula.uchoa@example.com",
+        "enderecos": [
+            {
+                "cep": "76010-000"
+            },
+            {
+                "cep": "76020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Vitor Vasconcelos",
+        "idade": 31,
+        "email": "vitor.vasconcelos@example.com",
+        "enderecos": [
+            {
+                "cep": "77010-000"
+            },
+            {
+                "cep": "77020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Wagner Wallace",
+        "idade": 28,
+        "email": "wagner.wallace@example.com",
+        "enderecos": [
+            {
+                "cep": "78010-000"
+            },
+            {
+                "cep": "78020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Xavier Xavier",
+        "idade": 39,
+        "email": "xavier.xavier@example.com",
+        "enderecos": [
+            {
+                "cep": "79010-000"
+            },
+            {
+                "cep": "79020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Yara Yates",
+        "idade": 34,
+        "email": "yara.yates@example.com",
+        "enderecos": [
+            {
+                "cep": "80010-000"
+            },
+            {
+                "cep": "80020-000"
+            }
+        ]
+    },
+    {
+        "nome": "Zara Zanon",
+        "idade": 26,
+        "email": "zara.zanon@example.com",
+        "enderecos": [
+            {
+                "cep": "81010-000"
+            },
+            {
+                "cep": "81020-000"
+            }
+        ]
+    }
+]

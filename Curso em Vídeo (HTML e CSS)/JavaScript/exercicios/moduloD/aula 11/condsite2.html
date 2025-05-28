@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Sistema de Estrangeirismo</h1>
+    De qual país você é? <input  type="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    </div>
+    <script>
+        function verificar(){
+        var txtp = window.document.querySelector('input#txtpais')
+        var res = window.document.querySelector('div#res')
+        var pais = txtp.value.trim() // "trim" remove os espaços desnecessários
+        res.innerHTML = `Seu país é o ${pais}!`
+        if (pais === 'Brasil') {
+            res.innerHTML += `<p>Você é <strong>BRASILEIRO</strong></p>` 
+        } else {
+            res.innerHTML += `<p>Você é estrangeiro</p>`
+        }
+    }
+    </script>
+</body>
+</html>

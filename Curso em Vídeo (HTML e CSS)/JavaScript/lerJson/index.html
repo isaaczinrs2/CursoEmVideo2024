@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leitura de JSON em JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 2px solid black;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pesquisa de Usuários</h1>
+    <form id="formPesquisa">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <button type="submit">Pesquisar</button>
+    </form>
+    
+    <h2>Resultados da Pesquisa</h2>
+    <div id="resultados"></div>
+
+    <script>
+        // Função para ler o arquivo JSON
+        async function lerJSON() {
+            try {
+                const response = await fetch('usuarios.json');
+                
+                if (!response.ok) {
+                    throw new Error('Erro ao carregar o arquivo JSON: ' + response.statusText);
+                }
+
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Erro ao ler o arquivo JSON:', error);
+                return [];
+            }
+        }
+
+        // Função de pesquisa
+        function pesquisarDados(usuarios, nome, idade, email) {
+            return usuarios.filter(usuario => {
+                return (!nome || usuario.nome.toLowerCase().includes(nome.toLowerCase())) &&
+                       (!idade || usuario.idade == idade) &&
+                       (!email || usuario.email.toLowerCase().includes(email.toLowerCase()));
+            });
+        }
+
+        // Função para exibir os resultados
+        function exibirResultados(resultados) {
+            const resultadosDiv = document.getElementById('resultados');
+            resultadosDiv.innerHTML = '';
+
+            if (resultados.length === 0) {
+                resultadosDiv.innerHTML = '<p>Nenhum resultado encontrado.</p>';
+                return;
+            }
+
+            const tabela = document.createElement('table');
+            const thead = document.createElement('thead');
+            const tbody = document.createElement('tbody');
+
+            // Cabeçalho da tabela
+            const cabecalho = document.createElement('tr');
+            cabecalho.innerHTML = `
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Email</th>
+                <th>CEPs</th>
+            `;
+            thead.appendChild(cabecalho);
+
+            // Linhas da tabela
+            resultados.forEach(usuario => {
+                const linha = document.createElement('tr');
+                
+                // Coleta todos os CEPs em uma string separada por vírgula
+                const ceps = usuario.enderecos.map(endereco => endereco.cep).join(', ');
+
+                linha.innerHTML = `
+                    <td>${usuario.nome}</td>
+                    <td>${usuario.idade}</td>
+                    <td>${usuario.email}</td>
+                    <td>${ceps}</td>
+                `;
+                tbody.appendChild(linha);
+            });
+
+            tabela.appendChild(thead);
+            tabela.appendChild(tbody);
+            resultadosDiv.appendChild(tabela);
+        }
+
+        // Submissão do formulário
+        document.getElementById('formPesquisa').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const idade = document.getElementById('idade').value;
+            const email = document.getElementById('email').value;
+
+            const usuarios = await lerJSON();
+            const resultados = pesquisarDados(usuarios, nome, idade, email);
+            exibirResultados(resultados);
+        });
+    </script>
+</body>
+</html>
